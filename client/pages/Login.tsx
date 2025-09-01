@@ -56,7 +56,7 @@ export function Login() {
                 <h1 className="text-3xl font-bold text-gray-900 leading-tight">
                   Voice Recording
                   <br />
-                  <span className="text-red-600">Management System</span>
+                  <span className="text-primary">Management System</span>
                 </h1>
                 <p className="text-base text-gray-600 leading-relaxed">
                   Secure access to your voice recording dashboard. Monitor,
@@ -66,19 +66,19 @@ export function Login() {
             </div>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <span className="text-sm text-gray-600">
                   Real-time monitoring
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <span className="text-sm text-gray-600">
                   Advanced analytics
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <span className="text-sm text-gray-600">
                   Secure data handling
                 </span>
@@ -134,7 +134,7 @@ export function Login() {
                         required
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="block w-full pl-9 pr-3 py-2.5 border border-gray-200 rounded-lg bg-white/50 backdrop-blur-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all duration-200"
+                        className="block w-full pl-9 pr-3 py-2.5 border border-gray-200 rounded-lg bg-white/50 backdrop-blur-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
                         placeholder="Enter your username"
                       />
                     </div>
@@ -159,7 +159,7 @@ export function Login() {
                         required
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="block w-full pl-9 pr-10 py-2.5 border border-gray-200 rounded-lg bg-white/50 backdrop-blur-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all duration-200"
+                        className="block w-full pl-9 pr-10 py-2.5 border border-gray-200 rounded-lg bg-white/50 backdrop-blur-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200"
                         placeholder="Enter your password"
                       />
                       <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
@@ -182,7 +182,7 @@ export function Login() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg text-sm font-medium text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   {isLoading ? (
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
@@ -196,7 +196,7 @@ export function Login() {
                   <button
                     type="button"
                     onClick={() => (window.location.href = "/forgot-password")}
-                    className="text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
+                    className="text-sm text-primary hover:text-primary/80 font-medium transition-colors"
                   >
                     Forgot your password?
                   </button>
