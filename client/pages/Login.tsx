@@ -50,7 +50,7 @@ export function Login() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
                 alt="SE TECH Logo"
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain block -ml-1"
               />
               <div className="space-y-3">
                 <h1 className="text-3xl font-bold text-gray-900 leading-tight">
