@@ -61,7 +61,7 @@ export function ForgotPassword() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
             <div className="mx-auto h-20 w-20 flex items-center justify-center">
@@ -94,7 +94,7 @@ export function ForgotPassword() {
               <div className="pt-4">
                 <button
                   onClick={handleBackToLogin}
-                  className="w-full flex justify-center items-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-red-600 bg-red-50 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                  className="w-full flex justify-center items-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-primary bg-primary/10 hover:bg-primary/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                 >
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   Back to Login
@@ -108,13 +108,13 @@ export function ForgotPassword() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="mx-auto h-20 w-20 flex items-center justify-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F7967a1920bbf4ce0ae781c5d84b92543%2F0958e94a3cce420e957ba5a524dc2794?format=webp&width=800"
-              alt="Bank Alfalah Logo"
+              src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
+              alt="SE TECH Logo"
               className="h-16 w-auto object-contain"
             />
           </div>
@@ -159,7 +159,7 @@ export function ForgotPassword() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                className="appearance-none block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                 placeholder="Enter your email address"
               />
             </div>
@@ -169,10 +169,10 @@ export function ForgotPassword() {
             <button
               type="submit"
               disabled={isLoading}
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                <Send className="h-5 w-5 text-red-500 group-hover:text-red-400" />
+                <Send className="h-5 w-5 text-primary/90 group-hover:text-primary" />
               </span>
               {isLoading ? "Sending..." : "Send Reset Link"}
             </button>
@@ -180,7 +180,7 @@ export function ForgotPassword() {
             <button
               type="button"
               onClick={handleBackToLogin}
-              className="w-full flex justify-center items-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              className="w-full flex justify-center items-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Login
