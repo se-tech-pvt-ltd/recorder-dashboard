@@ -229,14 +229,14 @@ export function Header() {
           <div className="relative">
             <button
               onClick={() => setShowDropdown(!showDropdown)}
-              className="flex items-center space-x-2 text-sm bg-white border border-gray-300 rounded-md px-3 py-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="flex items-center space-x-2 text-sm bg-white border border-gray-300 rounded-md px-3 py-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <div className="flex items-center space-x-2">
-                <div className="h-6 w-6 bg-red-100 rounded-full flex items-center justify-center">
+                <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
                   {isAdmin() ? (
-                    <Shield className="h-3 w-3 text-red-600" />
+                    <Shield className="h-3 w-3 text-primary" />
                   ) : (
-                    <User className="h-3 w-3 text-red-600" />
+                    <User className="h-3 w-3 text-primary" />
                   )}
                 </div>
                 <div className="text-left">
@@ -263,7 +263,7 @@ export function Header() {
                       <span
                         className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${
                           isAdmin()
-                            ? "bg-red-100 text-red-800"
+                            ? "bg-primary/10 text-primary"
                             : "bg-gray-100 text-gray-800"
                         }`}
                       >
