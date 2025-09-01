@@ -140,8 +140,8 @@ export function Header() {
             title="Go to Dashboard"
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F7967a1920bbf4ce0ae781c5d84b92543%2F0958e94a3cce420e957ba5a524dc2794?format=webp&width=800"
-              alt="Bank Alfalah Logo"
+              src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
+              alt="SE TECH Logo"
               className="h-8 w-auto object-contain"
             />
           </button>
