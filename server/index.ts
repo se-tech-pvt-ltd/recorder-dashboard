@@ -109,7 +109,7 @@ export function createServer() {
   app.use(
     cors({
       origin: [
-        "http://localhost:8080",
+        "http://localhost:3800",
         "http://localhost:3000",
         /\.fly\.dev$/,
         /\.vercel\.app$/,

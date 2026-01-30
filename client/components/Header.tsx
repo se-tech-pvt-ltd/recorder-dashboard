@@ -140,7 +140,7 @@ export function Header() {
             title="Go to Dashboard"
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
+              src="/logo.png"
               alt="SE TECH Logo"
               className="h-8 w-auto object-contain"
             />
@@ -210,18 +210,18 @@ export function Header() {
               {(user.branch_address ||
                 user.branch_name ||
                 user.branch_city) && (
-                <div className="flex items-center space-x-1">
-                  <Building2 className="h-4 w-4" />
-                  <span>
-                    Branch:{" "}
-                    {isAdmin()
-                      ? user.branch_city
-                      : user.branch_address ||
+                  <div className="flex items-center space-x-1">
+                    <Building2 className="h-4 w-4" />
+                    <span>
+                      Branch:{" "}
+                      {isAdmin()
+                        ? user.branch_city
+                        : user.branch_address ||
                         user.branch_name ||
                         user.branch_city}
-                  </span>
-                </div>
-              )}
+                    </span>
+                  </div>
+                )}
             </div>
           </div>
 
@@ -261,11 +261,10 @@ export function Header() {
                     <p className="text-xs text-gray-500">@{user.username}</p>
                     <div className="flex items-center space-x-1 mt-1">
                       <span
-                        className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${
-                          isAdmin()
+                        className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${isAdmin()
                             ? "bg-primary/10 text-primary"
                             : "bg-gray-100 text-gray-800"
-                        }`}
+                          }`}
                       >
                         {isAdmin() ? (
                           <>

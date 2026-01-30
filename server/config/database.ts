@@ -2,9 +2,9 @@ import mysql from "mysql2/promise";
 
 // Database configuration matching your parameters
 const dbConfig = {
-  host: process.env.DB_HOST || "crm-setech.cloud",
+  host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "setcrminternet",
-  password: process.env.DB_PASS || "password",
+  password: process.env.DB_PASS || "P@ssw0rd123",
   database: process.env.DB_NAME || "bafl_recorder",
   port: parseInt(process.env.DB_PORT || "3306"),
   waitForConnections: true,
@@ -28,6 +28,8 @@ export async function testConnection() {
     console.error("   Port:", dbConfig.port);
     console.error("   Database:", dbConfig.database);
     console.error("   User:", dbConfig.user);
+        console.error("   Password:", dbConfig.password);
+
     return false;
   }
 }

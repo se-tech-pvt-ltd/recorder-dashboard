@@ -48,7 +48,7 @@ export function Login() {
           <div className="hidden lg:block space-y-4 px-6">
             <div className="space-y-3">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
+                src="/logo.png"
                 alt="SE TECH Logo"
                 className="h-16 w-auto object-contain block -ml-1"
               />
@@ -92,7 +92,7 @@ export function Login() {
               {/* Mobile logo */}
               <div className="lg:hidden text-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F97521b45e51e4603b4d4b08725932f4c%2Ff574011b018b45a591d03ec9ea2e9295?format=webp&width=800"
+                  src="/logo.png"
                   alt="SE TECH Logo"
                   className="h-12 w-auto mx-auto object-contain"
                 />
