@@ -1,59 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SE TECH - Device Monitoring</title>
-    <link rel="icon" type="image/png" href="/logo.png" />
 
-    <!-- Early warning suppression script -->
-    <script>
-      (function () {
-        // Store original console methods
-        const originalWarn = console.warn;
-        const originalError = console.error;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SE TECH - Device Monitoring</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
 
-        // Override console methods immediately
-        console.warn = function (...args) {
-          const message = String(args.join(" "));
+  <!-- Early warning suppression script -->
+  <script>
+    (function () {
+      // Store original console methods
+      const originalWarn = console.warn;
+      const originalError = console.error;
 
-          // Suppress Recharts defaultProps warnings
-          if (
-            message.includes("Support for defaultProps will be removed") ||
-            message.includes("defaultProps will be removed") ||
-            (message.includes("XAxis") && message.includes("defaultProps")) ||
-            (message.includes("YAxis") && message.includes("defaultProps"))
-          ) {
-            return; // Suppress these warnings completely
-          }
+      // Override console methods immediately
+      console.warn = function (...args) {
+        const message = String(args.join(" "));
 
-          // Let other warnings through
-          originalWarn.apply(console, args);
-        };
+        // Suppress Recharts defaultProps warnings
+        if (
+          message.includes("Support for defaultProps will be removed") ||
+          message.includes("defaultProps will be removed") ||
+          (message.includes("XAxis") && message.includes("defaultProps")) ||
+          (message.includes("YAxis") && message.includes("defaultProps"))
+        ) {
+          return; // Suppress these warnings completely
+        }
 
-        console.error = function (...args) {
-          const message = String(args.join(" "));
+        // Let other warnings through
+        originalWarn.apply(console, args);
+      };
 
-          // Suppress Recharts defaultProps errors
-          if (
-            message.includes("Support for defaultProps will be removed") ||
-            message.includes("defaultProps will be removed") ||
-            (message.includes("XAxis") && message.includes("defaultProps")) ||
-            (message.includes("YAxis") && message.includes("defaultProps"))
-          ) {
-            return; // Suppress these errors completely
-          }
+      console.error = function (...args) {
+        const message = String(args.join(" "));
 
-          // Let other errors through
-          originalError.apply(console, args);
-        };
-      })();
-    </script>
-  </head>
+        // Suppress Recharts defaultProps errors
+        if (
+          message.includes("Support for defaultProps will be removed") ||
+          message.includes("defaultProps will be removed") ||
+          (message.includes("XAxis") && message.includes("defaultProps")) ||
+          (message.includes("YAxis") && message.includes("defaultProps"))
+        ) {
+          return; // Suppress these errors completely
+        }
 
-  <body>
-    <div id="root"></div>
+        // Let other errors through
+        originalError.apply(console, args);
+      };
+    })();
+  </script>
+</head>
 
-    <script type="module" src="/client/App.tsx"></script>
-  </body>
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/client/App.tsx"></script>
+</body>
+
 </html>
