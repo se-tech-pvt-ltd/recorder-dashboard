@@ -158,7 +158,7 @@ export function Login() {
           </button>
 
           <p className="text-center text-xs text-gray-500 mt-6">
-            © 2025 SE TECH (Pvt.) Ltd.
+            © 2026 SE TECH (Pvt.) Ltd.
             <br />
             Protected by reCAPTCHA and subject to the Privacy Policy.
           </p>
